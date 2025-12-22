@@ -29,7 +29,7 @@ const ContactSection = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="RATAUL Office Location"
+              title="THIND AND NANDHA Office Location"
             />
           </div>
 

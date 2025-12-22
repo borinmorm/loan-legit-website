@@ -40,7 +40,7 @@ const ServicesSection = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Our Services</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">
-            Why Choose RATAUL Lending?
+            Why Choose THIND AND NANDHA Lending?
           </h2>
           <p className="text-muted-foreground">
             We provide comprehensive lending solutions designed to meet your financial needs with transparency and trust.

@@ -20,7 +20,7 @@ const AdminLogin = () => {
 
     // Simulated login - in production, this would connect to a backend
     setTimeout(() => {
-      if (email === 'admin@rataul.com' && password === 'admin123') {
+      if (email === 'admin@THIND AND NANDHA.com' && password === 'admin123') {
         localStorage.setItem('adminAuth', 'true');
         toast({
           title: 'Login Successful',
@@ -44,7 +44,7 @@ const AdminLogin = () => {
         <div className="bg-card rounded-2xl shadow-xl p-8 border border-border">
           {/* Logo */}
           <div className="text-center mb-8">
-            <img src={logo} alt="RATAUL Logo" className="h-20 mx-auto mb-4" />
+            <img src={logo} alt="THIND AND NANDHA Logo" className="h-20 mx-auto mb-4" />
             <h1 className="text-2xl font-bold text-foreground">Admin Login</h1>
             <p className="text-muted-foreground text-sm mt-2">
               Enter your credentials to access the dashboard
@@ -61,7 +61,7 @@ const AdminLogin = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@rataul.com"
+                  placeholder="admin@THIND AND NANDHA.com"
                   className="pl-10"
                   required
                 />
@@ -99,7 +99,7 @@ const AdminLogin = () => {
           <div className="mt-6 p-4 bg-muted/50 rounded-lg">
             <p className="text-xs text-muted-foreground text-center">
               <strong>Demo Credentials:</strong><br />
-              Email: admin@rataul.com<br />
+              Email: admin@THIND AND NANDHA.com<br />
               Password: admin123
             </p>
           </div>

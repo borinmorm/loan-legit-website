@@ -59,7 +59,8 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-3">
           <img src={getImageSrc(content.logoUrl, logo)} alt={`${content.companyName} Logo`} className="h-12 w-auto" />
           <div className="hidden sm:block">
-            <span className="text-lg font-bold text-primary">{content.companyName.split(' ')[0] || content.companyName}</span>
+            {/* <span className="text-lg font-bold text-primary">{content.companyName}</span> */}
+            <span className="text-lg font-bold text-primary">THIND AND NANDHA</span>
             <p className="text-xs text-muted-foreground">{content.tagline}</p>
           </div>
         </Link>

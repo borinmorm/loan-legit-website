@@ -35,14 +35,14 @@ interface SiteContentContextType {
 }
 
 const defaultContent: SiteContent = {
-  companyName: "RATAUL LENDING INVESTOR AND TRADING CORP",
+  companyName: "THIND AND NANDHA LENDING INVESTOR CORP",
   tagline: "Your Trusted Financial Partner",
   heroTitle: "Fast, Secure & Legal Online Loans",
   heroSubtitle: "SEC-registered and government-certified lending services in the Philippines. Get the financial support you need with complete peace of mind.",
-  aboutText: "RATAUL LENDING INVESTOR AND TRADING CORP. operates legally under the supervision of the Securities and Exchange Commission (SEC) of the Philippines and is fully certified by the government to provide online loan services. We are committed to providing safe, secure, and fully legal financial services.",
-  address: "Retail 107, Ground Floor, 8 Rockwell Center, Plaza Dr, Makati City, 1210 Metro Manila, Philippines",
-  plusCode: "H27P+CJ Makati City, Metro Manila, Philippines",
-  googleMapsUrl: "https://maps.app.goo.gl/AbMkajbhS6Lpy99m9",
+  aboutText: "THIND AND NANDHA LENDING INVESTOR CORP. operates legally under the supervision of the Securities and Exchange Commission (SEC) of the Philippines and is fully certified by the government to provide online loan services. We are committed to providing safe, secure, and fully legal financial services.",
+  address: "UNIT 805 8TH, Pearl of the Orient Tower Roxas Blvd, Ermita, Manila, 1000 Metro Manila, Philippines",
+  plusCode: "HXGH+RQ Manila, Metro Manila, Philippines",
+  googleMapsUrl: "https://maps.app.goo.gl/rJ9KuyzcfZyLnSSF8",
   email: "lendingph.info@gmail.com",
   website: "https://www.fastlendingofficial-php.com/login",
   applyUrl: "https://www.fastlendingofficial-php.com/login",

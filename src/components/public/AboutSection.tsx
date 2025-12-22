@@ -25,7 +25,7 @@ const AboutSection = () => {
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src={getImageSrc(content.aboutImageUrl, office2)} 
-                alt="RATAUL Meeting Room" 
+                alt="THIND AND NANDHA Meeting Room" 
                 className="w-full h-auto object-cover"
               />
             </div>

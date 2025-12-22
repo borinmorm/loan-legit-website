@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "fastlending-php"
-  }
+    "default": "thind-and-nandha",
+    "thind-and-nandha": "thind-and-nandha"
+  },
+  "targets": {},
+  "etags": {}
 }

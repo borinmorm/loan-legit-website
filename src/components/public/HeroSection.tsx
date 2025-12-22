@@ -73,7 +73,7 @@ const HeroSection = () => {
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src={getImageSrc(content.heroImageUrl, office1)} 
-                alt="RATAUL Office" 
+                alt="THIND AND NANDHA Office" 
                 className="w-full h-auto object-cover"
               />
             </div>

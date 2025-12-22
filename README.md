@@ -40,6 +40,6 @@ for apply now button link also dynamic
 Footer section:
 1. Legal information
 2. contact information
-3. Name of the company at the "© 2025 RATAUL LENDING INVESTOR AND TRADING CORP. All rights reserved."
+3. Name of the company at the "© 2025 THIND AND NANDHA LENDING INVESTOR CORP. All rights reserved."
 
 also create a privacy policy and terms of services pages

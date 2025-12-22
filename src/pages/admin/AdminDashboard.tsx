@@ -42,6 +42,11 @@ const AdminDashboard = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
+  const getStringValue = (key: string) => {
+    const v = (formData as any)[key];
+    return typeof v === 'string' ? v : '';
+  };
+
   const sections = [
     {
       title: 'Company Information',
@@ -97,7 +102,7 @@ const AdminDashboard = () => {
       <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="RATAUL Logo" className="h-10 w-auto" />
+            <img src={logo} alt="THIND AND NANDHA Logo" className="h-10 w-auto" />
             <div>
               <h1 className="font-bold text-foreground">Admin Dashboard</h1>
               <p className="text-xs text-muted-foreground">Manage site content</p>
@@ -144,7 +149,7 @@ const AdminDashboard = () => {
                     </label>
                     {field.type === 'textarea' ? (
                       <Textarea
-                        value={formData[field.key as keyof typeof formData] || ''}
+                        value={getStringValue(field.key)}
                         onChange={(e) => handleInputChange(field.key, e.target.value)}
                         rows={4}
                         className="resize-none"
@@ -152,16 +157,16 @@ const AdminDashboard = () => {
                     ) : (
                       <Input
                         type={field.type}
-                        value={formData[field.key as keyof typeof formData] || ''}
+                        value={getStringValue(field.key)}
                         onChange={(e) => handleInputChange(field.key, e.target.value)}
                         placeholder={'placeholder' in field ? field.placeholder : ''}
                       />
                     )}
-                    {field.key.includes('ImageUrl') && formData[field.key as keyof typeof formData] && (
+                    {field.key.includes('ImageUrl') && typeof (formData as any)[field.key] === 'string' && (
                       <div className="mt-2 rounded-lg overflow-hidden border border-border max-w-xs">
-                        <img 
-                          src={formData[field.key as keyof typeof formData]} 
-                          alt="Preview" 
+                        <img
+                          src={getStringValue(field.key)}
+                          alt="Preview"
                           className="w-full h-auto object-cover"
                           onError={(e) => {
                             (e.target as HTMLImageElement).style.display = 'none';
