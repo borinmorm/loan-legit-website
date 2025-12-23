@@ -22,7 +22,7 @@ const ContactSection = () => {
           {/* Map embed */}
           <div className="rounded-2xl overflow-hidden shadow-xl h-96 lg:h-auto">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.802394377611!2d121.04556491531665!3d14.556570281825407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9099d3c5b73%3A0x7d8c9d9c3d3b3c3c!2s8%20Rockwell%2C%20Makati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1699000000000!5m2!1sen!2sph"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1130.5618174552642!2d120.97876001989502!3d14.576969084930221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2b631ab0f9%3A0x7c6e1de5d38c1b8a!2sPearl%20of%20the%20Orient%20Tower!5e1!3m2!1sen!2skh!4v1766450677746!5m2!1sen!2skh"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '400px' }}
@@ -31,6 +31,7 @@ const ContactSection = () => {
               referrerPolicy="no-referrer-when-downgrade"
               title="THIND AND NANDHA Office Location"
             />
+
           </div>
 
           {/* Contact info */}
