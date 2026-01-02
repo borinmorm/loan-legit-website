@@ -18,18 +18,19 @@ const ContactSection = () => {
           </p>
         </div>
 
+
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Map embed */}
           <div className="rounded-2xl overflow-hidden shadow-xl h-96 lg:h-auto">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1130.5618174552642!2d120.97876001989502!3d14.576969084930221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2b631ab0f9%3A0x7c6e1de5d38c1b8a!2sPearl%20of%20the%20Orient%20Tower!5e1!3m2!1sen!2skh!4v1766450677746!5m2!1sen!2skh"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.9141275564757!2d121.04331564402236!3d14.554353113532327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf4a54fe3001%3A0xc58da37060c0ce63!2sH23V%2BJW%2C%20Taguig%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2skh!4v1767350306972!5m2!1sen!2skh"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '400px' }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="THIND AND NANDHA Office Location"
+              title="CREST OF NICE-J Office Location"
             />
 
           </div>

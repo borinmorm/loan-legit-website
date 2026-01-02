@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-background/60">
-            © 2017 {content.companyName}. All rights reserved.
+            © 2019 {content.companyName}. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm text-background/60">
             <a href="/privacy" className="hover:text-secondary transition-colors">Privacy Policy</a>

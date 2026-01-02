@@ -11,7 +11,7 @@ import logo from '@/assets/logo.png';
 const AdminDashboard = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const { content, updateContent } = useSiteContent();
+  const { content, updateContent, setThemeColors } = useSiteContent();
   const [formData, setFormData] = useState(content);
 
   useEffect(() => {
@@ -102,7 +102,7 @@ const AdminDashboard = () => {
       <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="THIND AND NANDHA Logo" className="h-10 w-auto" />
+            <img src={logo} alt="CREST OF NICE-J Logo" className="h-10 w-auto" />
             <div>
               <h1 className="font-bold text-foreground">Admin Dashboard</h1>
               <p className="text-xs text-muted-foreground">Manage site content</p>
@@ -179,6 +179,79 @@ const AdminDashboard = () => {
               </div>
             </div>
           ))}
+
+          {/* Theme color tester */}
+          <div className="bg-card rounded-2xl border border-border p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
+                <Save className="h-5 w-5 text-primary-foreground" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground">Theme Colors</h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="text-sm font-medium text-foreground">Primary Color (hex or H S% L%)</label>
+                <Input
+                  value={(formData.theme && formData.theme.primary) || ''}
+                  onChange={(e) => setFormData(prev => ({ ...prev, theme: { ...prev.theme, primary: e.target.value } }))}
+                  placeholder="#0ea5ff or 199 89% 48%"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-medium text-foreground">Secondary Color (hex or H S% L%)</label>
+                <Input
+                  value={(formData.theme && formData.theme.secondary) || ''}
+                  onChange={(e) => setFormData(prev => ({ ...prev, theme: { ...prev.theme, secondary: e.target.value } }))}
+                  placeholder="#06b6d4 or 221 83% 25%"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-2 justify-end mt-4">
+              <Button
+                variant="outline"
+                onClick={() => {
+                  // Preview only: apply without persisting
+                  setThemeColors({
+                    primary: (formData.theme && formData.theme.primary) || undefined,
+                    secondary: (formData.theme && formData.theme.secondary) || undefined,
+                  }, false);
+                  toast({ title: 'Preview Applied', description: 'Theme colors applied for preview (not saved).' });
+                }}
+              >
+                Apply Preview
+              </Button>
+
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  // reset to defaults (from CSS defaults)
+                  const defaults = { primary: '221 83% 25%', secondary: '199 89% 48%' };
+                  setFormData(prev => ({ ...prev, theme: { ...prev.theme, ...defaults } }));
+                  setThemeColors(defaults, false);
+                  toast({ title: 'Reset', description: 'Theme preview reset to defaults.' });
+                }}
+              >
+                Reset
+              </Button>
+
+              <Button
+                onClick={() => {
+                  // Persist changes via updateContent
+                  handleSave();
+                  // ensure theme is applied and saved
+                  setThemeColors({
+                    primary: (formData.theme && formData.theme.primary) || undefined,
+                    secondary: (formData.theme && formData.theme.secondary) || undefined,
+                  }, true);
+                }}
+                className="gap-2"
+              >
+                Save All Changes
+              </Button>
+            </div>
+          </div>
 
           {/* Image management tip */}
           <div className="bg-muted/50 rounded-2xl border border-border p-6">

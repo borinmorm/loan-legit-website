@@ -12,10 +12,12 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  /* use primary color (with alpha) for glow */
+  filter: drop-shadow(0 0 2em hsl(var(--primary) / 0.4));
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  /* use accent color for react logo glow */
+  filter: drop-shadow(0 0 2em hsl(var(--accent) / 0.35));
 }
 
 @keyframes logo-spin {
@@ -38,5 +40,5 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: hsl(var(--muted-foreground));
 }
